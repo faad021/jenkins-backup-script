@@ -88,7 +88,7 @@ function main() {
   fi
 
   cd "${TMP_DIR}"
-
+  zip -czvf "${TMP_TAR_NAME}" "${ARC_NAME}/"*
   
 
   cleanup
