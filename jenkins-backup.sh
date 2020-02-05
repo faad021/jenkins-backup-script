@@ -88,7 +88,7 @@ function main() {
   fi
 
   cd "${TMP_DIR}"
-  ./jenkins-backup.sh $JENKINS_HOME /data/backup/settings/backup_`date +"%Y%m%d%H%M%S"`.tar.gz
+  tar -czvf "${TMP_TAR_NAME}" "${ARC_NAME}/"*
   
 
   cleanup
